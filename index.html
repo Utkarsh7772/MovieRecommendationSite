@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebWizardry</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+  </head>
+  <body>
+    <div class="popup-container" id="loginPopup">
+      <div class="login-container">
+        <div class="msg">
+          <p id="msg"></p>
+        </div>
+        <div id="main">
+          <h1>Sign In</h1>
+          <input id="email" type="text" placeholder="Email" />
+          <input id="password" type="password" placeholder="Password" />
+          <button id="submit">Submit</button>
+          <p><span>or</span></p>
+          <button id="sign-up">Sign Up</button>
+        </div>
+        <div id="create-acct">
+          <h1>Create an Account</h1>
+          <input id="email-signup" type="text" placeholder="Email *" />
+          <input
+            id="confirm-email-signup"
+            type="email"
+            placeholder="Confirm Email *"
+          />
+          <input
+            id="password-signup"
+            type="password"
+            placeholder="Password *"
+          />
+          <input
+            id="confirm-password-signup"
+            type="password"
+            placeholder="Confirm Password *"
+          />
+          <button id="create-acct-btn">Create Account</button>
+          <button id="return-btn">Return to Login</button>
+        </div>
+      </div>
+    </div>
+    <header class="glass" id="top">
+      <div class="container">
+        <div class="topbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.jpg" alt="logo" />
+              <h1>WebWizardry</h1>
+            </a>
+          </div>
+          <div class="searchbar">
+            <input
+              id="search"
+              type="search"
+              placeholder="Search your next FAVOURITE watch.."
+            />
+            <a class="search-btn">
+              <i class="fas fa-search"></i>
+            </a>
+          </div>
+          <div class="login">
+            <button class="login-button" id="lgn-btn" onclick="togglePopup()">Login</button>
+          </div>
+        </div>
+        <div class="bottombar">
+          <nav>
+            <ul>
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#trending">Trending</a></li>
+              <li><a href="#playing">Now Playing</a></li>
+              <li><a href="#upcoming">Upcoming</a></li>
+              <li><a href="#rated">Top Rated</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <img id="bg-img" class="bgimg" src="" alt="" />
+      <div class="container">
+        <div class="circle">
+          <img id="up-next" src="" alt="" />
+        </div>
+        <h3 id="movie-title"></h3>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="transition"></div>
+      <div class="navigation">
+        <div class="userBx">
+          <p class="username">Filter by Genre</p>
+        </div>
+        <div class="menuToggle"></div>
+        <ul class="menu">
+          <li><a href="action.html"> Action </a></li>
+          <li><a href="adventure.html"> Adventure </a></li>
+          <li><a href="animation.html"> Animation </a></li>
+          <li><a href="comedy.html"> Comedy </a></li>
+          <li><a href="horror.html"> Horror </a></li>
+          <li><a href="crime.html"> Crime </a></li>
+          <li><a href="drama.html"> Drama </a></li>
+          <li><a href="family.html"> Family </a></li>
+          <li><a href="fantasy.html"> Fantasy </a></li>
+          <li><a href="romance.html"> Romance </a></li>
+          <li><a href="science-fiction.html"> Science Fiction </a></li>
+        </ul>
+      </div>
+      <div class="rated" id="rated">
+        <div class="header">
+          <h1>Top Rated</h1>
+        </div>
+        <div class="row items"></div>
+      </div>
+      <div class="trending" id="trending">
+        <div class="header">
+          <h1>Trending</h1>
+        </div>
+        <div class="row items"></div>
+      </div>
+      <div class="upcoming" id="upcoming">
+        <div class="header">
+          <h1>Upcoming</h1>
+        </div>
+        <div class="row items"></div>
+      </div>
+      <div class="playing" id="playing">
+        <div class="header">
+          <h1>Now Playing</h1>
+        </div>
+        <div class="row items"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <video autoplay loop muted >
+          <source src="video.mp4" type="video/mp4" ></source>
+        </video>
+        <div class="text-box">
+          <h1>WEB</h1> 
+          <br>
+          <h1>WIZARDRY</h1>
+        </div>
+        <div class="copyright">
+          <h3>
+            " From Classics to Hidden Gems : Your Movie Journey Starts Here ! "
+          </h3>
+          <h4>
+            © 2023 WebWizardry. All Rights Reserved.
+          </h4>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="scripts/register.js"></script>
+    <script src="scripts/index.js"></script>
+    <script>
+      function closePopup() {
+      var popup = document.getElementById("loginPopup");
+      var overlay = document.querySelector(".popup-overlay");
+      popup.style.display = "none";
+      overlay.style.display = "none";
+    }
+    function togglePopup() {
+      var popup = document.getElementById("loginPopup");
+      var overlay = document.querySelector(".popup-overlay");
+      if (popup.style.display === "block" || popup.style.display === "") {
+        popup.style.display = "none";
+        overlay.style.display = "none";
+      } else {
+        popup.style.display = "block";
+        overlay.style.display = "block";
+      }
+    }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+:root {
+  --smoky-black: #100b00ff;
+  --yellow-green: #85cb33ff;
+  --mint-green: #c5e7d6ff;
+  --cambridge-blue: #97c3baff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--smoky-black);
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.bgimg {
+  position: absolute;
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  padding: 7%;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 40vw;
+  margin-right: 55vw;
+  height: 70vh;
+  margin-top: 15vh;
+}
+
+.login-container .logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.login-container .logo img {
+  width: 50px;
+}
+
+.login-container .msg {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.login-container .msg p {
+  font-size: 1.2rem;
+  color: var(--yellow-green);
+}
+
+h1 {
+  margin-bottom: 8%;
+  text-align: center;
+}
+
+p {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  width: 100%;
+  text-align: center;
+  line-height: 0.1em;
+}
+
+p span {
+  padding: 0 10px;
+}
+
+input {
+  margin-bottom: 3%;
+}
+
+input:last-of-type {
+  margin-bottom: 0;
+}
+
+input,
+button {
+  padding: 3%;
+  width: 100%;
+}
+
+#create-acct {
+  display: none;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+#submit,
+#create-acct-btn {
+  background-color: #0583d2;
+  color: white;
+  border: none;
+  margin-top: 5%;
+}
+
+#return-btn {
+  background: none;
+  color: grey;
+  text-decoration: underline;
+  border: none;
+  margin-top: 3%;
+}
+
+#sign-up {
+  border: none;
+}
+
+.alert {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--mint-green);
+  border-radius: 0 0 0 16px;
+}
+
+.alert span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5%;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.alert p {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  color: var(--smoky-black);
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 5%;
+}

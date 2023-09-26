@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebWizardry</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="icon" href="images/logo.png" type="image/png" />
+  </head>
+  <body>
+    <div style="background: var(--secondary-color)">
+      <header class="glass" id="top">
+        <div class="container">
+          <div class="topbar">
+            <div class="logo">
+              <a href="index.html">
+                <img src="images/logo.jpg" alt="logo" />
+                <h1>WebWizardry</h1>
+              </a>
+            </div>
+            <div class="searchbar">
+              <input
+                id="search"
+                type="search"
+                placeholder="Search your next FAVOURITE watch.."
+              />
+              <a class="search-btn">
+                <i class="fas fa-search"></i>
+              </a>
+            </div>
+            <div class="login">
+              <a href="#">Login</a>
+            </div>
+          </div>
+          <div class="bottombar">
+            <nav>
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="index.html#trending">Trending</a></li>
+                <li><a href="index.html#playing">Now Playing</a></li>
+                <li><a href="index.html#upcoming">Upcoming</a></li>
+                <li><a href="index.html#rated">Top Rated</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <div class="spacing"></div>
+      <section class="gallery">
+        <div class="navigation">
+          <div class="userBx">
+            <p class="username">Filter by Genre</p>
+          </div>
+          <div class="menuToggle"></div>
+          <ul class="menu">
+            <li><a href="action.html"> Action </a></li>
+            <li><a href="adventure.html"> Adventure </a></li>
+            <li><a href="animation.html"> Animation </a></li>
+            <li><a href="#"> Comedy </a></li>
+            <li><a href="horror.html"> Horror </a></li>
+            <li><a href="crime.html"> Crime </a></li>
+            <li><a href="drama.html"> Drama </a></li>
+            <li><a href="family.html"> Family </a></li>
+            <li><a href="fantasy.html"> Fantasy </a></li>
+            <li><a href="romance.html"> Romance </a></li>
+            <li><a href="science-fiction.html"> Science Fiction </a></li>
+          </ul>
+        </div>
+        <div class="comedy" id="comedy">
+          <div class="header">
+            <h1>Comedy</h1>
+          </div>
+          <div class="page"></div>
+        </div>
+      </section>
+    </div>
+    <footer>
+      <div class="container">
+        <video autoplay loop muted >
+          <source src="video.mp4" type="video/mp4" ></source>
+        </video>
+        <div class="text-box">
+          <h1>WEB</h1> 
+          <br>
+          <h1>WIZARDRY</h1>
+        </div>
+        <div class="copyright">
+          <h3>
+            " From Classics to Hidden Gems : Your Movie Journey Starts Here ! "
+          </h3>
+          <h4>
+            © 2023 WebWizardry. All Rights Reserved.
+          </h4>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
