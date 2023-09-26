@@ -766,12 +766,12 @@ footer .h4 {
   color: var(--yellow-green);
 }
 
-h1 {
+.login-container h1 {
   margin-bottom: 8%;
   text-align: center;
 }
 
-p {
+.login-container p {
   margin-top: 5%;
   margin-bottom: 5%;
   width: 100%;
@@ -779,20 +779,20 @@ p {
   line-height: 0.1em;
 }
 
-p span {
+.login-container p span {
   padding: 0 10px;
 }
 
-input {
+.login-container input {
   margin-bottom: 3%;
 }
 
-input:last-of-type {
+.login-container input:last-of-type {
   margin-bottom: 0;
 }
 
-input,
-button {
+.login-container input,
+.login-container button {
   padding: 3%;
   width: 100%;
 }
